@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Personaje>;
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+@{
+    foreach (Personaje p in Model)
+    {
+
+        <p>@p.Name</p>
+    }
+}
